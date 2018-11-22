@@ -1,9 +1,23 @@
 .Header {
+  display: flex;
   border-bottom: 2px solid;
-  border-bottom-color: #666;
+  /* border-bottom-color: #333; */
   height: 72px;
   font-size: 24px;
-  color: white;
+}
+
+.Header-title {
+  /* border: 1px solid black; */
+  padding: 14px;
+  margin: 0;
+  display: block;
+  font-size: 36px;
+  color: black;
+}
+
+.Header-image {
+  /* border: 1px solid black; */
+  height: 71px;
 }
 
 .Header-logo {
