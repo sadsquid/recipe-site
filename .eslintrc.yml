@@ -5,13 +5,134 @@ extends: [
   react-app,
 ]
 parser: 'babel-eslint'
+parserOptions: {
+  ecmaFeatures: {
+    jsx: true,
+    legacyDecorators: true,
+  },
+  ecmaVersion: 6,
+  sourceType: 'module',
+}
 env: {
   es6: true,
   jest: true
 }
 rules: {
-  react/jsx-filename-extension: [1, { "extensions": [".js", ".jsx"] }]
+  react/jsx-filename-extension: [1, { "extensions": [".js", ".jsx"] }],
+  arrow-body-style: ["error", as-needed],
+  camelcase: "off",
+  default-case: ["error", { commentPattern: ^no default$ }],
+  dot-location: "off",
+  dot-notation: ["error", { allowKeywords: true }],
+  eqeqeq: ["error", always, { null: ignore }],
+  func-names: ["warn", as-needed],
+  func-style: "off",
+  import/default: "off",
+  import/dynamic-import-chunkname: [
+    "error",
+    {
+      importFunctions: [dynamicImport],
+    },
+  ],
+  import/extensions: [
+    "error",
+    ignorePackages,
+    {
+      js: never,
+    },
+  ],
+  import/newline-after-import: "error",
+  import/no-duplicates: "error",
+  import/no-dynamic-require: "error",
+  import/no-extraneous-dependencies: [
+    "error",
+    {
+      devDependencies: [
+        "webpack/**",
+        "config/**",
+        "**/test/**",
+        "**/__tests__/**",
+        "component-library/src/components/**/stories.js",
+      ],
+    },
+  ],
+  import/namespace: "off",
+  import/no-named-as-default-member: "off",
+  import/no-named-as-default: "off",
+  import/no-unresolved: ["error", { commonjs: true, caseSensitive: true }],
+  import/no-useless-path-segments: "error",
+  import/order: ["error", { groups: [["builtin", "external", "internal"]] }],
+  import/prefer-default-export: "off",
+  jsx-a11y/anchor-is-valid: "off",
+  jsx-a11y/click-events-have-key-events: "warn",
+  jsx-a11y/href-no-hash: "off",
+  jsx-a11y/label-has-for: "off",
+  jsx-a11y/no-autofocus: "off",
+  lines-between-class-members: "warn",
+  lodash/import-scope: ["error", member],
+  lodash/prefer-immutable-method: "off", 
+  lodash/prefer-includes: "off", 
+  lodash/prefer-is-nil: "off", 
+  lodash/prefer-lodash-method: "off", 
+  lodash/prefer-noop: "off", 
+  lodash/prefer-lodash-typecheck: "off", 
+  max-classes-per-file: ["error", 1],
+  new-parens: "off",
+  no-console: "warn",
+  no-mixed-requires: "warn",
+  no-new-require: "error",
+  no-param-reassign: "error",
+  no-path-concat: "error",
+  no-process-exit: "error",
+  no-restricted-imports: "error",
+  no-return-assign: "off",
+  no-shadow: "error",
+  no-unused-vars: "error",
+  no-whitespace-before-property: "off",
+  no-var: "error",
+  no-useless-return: "error",
+  object-shorthand: "error",
+  one-var: ["error", never],
+  prefer-destructuring: "off",
+  prefer-object-spread: "error",
+  prefer-rest-params: "error",
+  prefer-spread: "error",
+  radix: "error",
+  react/button-has-type: "warn",
+  react/default-props-match-prop-types: "error",
+
+  react/display-name: "off",
+  react/jsx-no-bind: "warn",
+  react/jsx-pascal-case: "error",
+  react/jsx-sort-default-props: [
+    "error",
+    {
+      ignoreCase: true,
+    },
+  ],
+  react/no-access-state-in-setstate: "error",
+
+  react/no-danger: "error",
+  react/no-deprecated: "warn",
+  react/no-unused-state: "error",
+  react/no-typos: "error",
+  
+  react/require-default-props: "off",
+  react/no-unsafe: "warn",
+  react/prefer-stateless-function: [
+    "warn",
+    {
+      ignorePureComponents: true,
+    },
+  ],
+  react/sort-comp: "error",
+  rest-spread-spacing: "off",
+  strict: ["warn", global],
 }
+plugins: ['import', 'lodash', 'react']
 settings: {
-  import/ignore: ['node_modules', '\\.(svg|json)$'],
+  import/ignore: [node_modules, \\.(svg|json)$],
+  react: {
+    version: '16.6.3'
+  }
 }
