@@ -10,7 +10,6 @@ const Header = () => (
     <div>
       <h1 className="Header-title">template</h1>
     </div>
-    <div />
   </div>
 );
 
