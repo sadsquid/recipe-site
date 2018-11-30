@@ -1,37 +1,61 @@
 .NavBar {
-  margin-top: 8px;
-  margin-bottom: 24px;
-  display: flex;
-}
-
-.NavItem {
-  /* border: 1px solid #d6d6d6; */
-  width: 100px;
-  padding: 8px;
-  margin-right: 16px;
-  margin-left: 16px;
-  border-bottom: 1px solid #d6d6d6;
-  text-align: center;
-  color: #333333;
-  font-weight: bold;
-}
-
-.NavItem:hover {
-  cursor: pointer;
-  background: #d6d6d6;
-  color: black;
-  transition: 0.6s ease-out;
-}
-
-.NavItem:active {
-  cursor: pointer;
-  background: #888;
-  color: black;
-  transition: 0.2s;
+  margin: 0;
+  padding: 0;
+  height: 48px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 16px;
+  /* padding-bottom: 24px; */
+  /* border-bottom: solid 24px white; */
 }
 
 .NavItem-Link {
-  /* border: 1px solid #d6d6d6; */
+  align-items: center;
+  justify-content: center;
+
+  height: 24px;
+  margin: 0 auto;
+  padding: 12px 16px;
+
+  /* background: pink; */
+
   color: #333333;
   text-decoration: none;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+
+  transition: transform 250ms ease-in-out;
+}
+
+.NavItem-Link:after {
+  display: block;
+  content: '';
+  margin: 0 auto;
+  width: 100%;
+  padding: 8px 16px;
+  margin-left: -16px;
+  border-bottom: 1px solid #765a56;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.NavItem-Link:hover:after {
+  transform: scaleX(1);
+}
+.NavItem-Link:active:after {
+  border-bottom-color: #ebddc2;
+}
+
+.NavItem-Link:hover {
+  color: #765a56;
+  opacity: 0.8;
+}
+
+.NavItem-Link:active {
+  opacity: 0.5;
+}
+.is-active {
+  color: #765a56;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #765a56;
 }

@@ -1,0 +1,32 @@
+.About {
+  height: 100%;
+  margin: 0;
+
+  background-color: #fff;
+  color: #333;
+}
+
+.About h1,
+.About h2,
+.About h3,
+.About h4,
+.About h5 {
+  color: #a63b1a;
+}
+.About-maintext {
+  padding-left: 24px;
+  width: 100%;
+}
+.About-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.About-quote {
+  border: 1px solid #a63b1a;
+  border-radius: 4px;
+  padding: 36px 120px;
+  opacity: 0.5;
+  color: #a63b1a;
+}

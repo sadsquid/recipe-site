@@ -1,15 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 import NavItem from './NavItem';
 import './NavBar.css';
 
-const NavBar = () => (
-  <div className="NavBar">
-    <NavItem link="/about" value="about" />
-    <NavItem value="test" />
-    <NavItem value="test" />
-    <NavItem value="test" />
-    <NavItem value="test" />
-  </div>
-);
+class NavBar extends Component {
+  render() {
+    const { navActive, onClick } = this.props;
+    return (
+      <div className="NavBar">
+        <NavItem
+          active={navActive === 'navItem-about'}
+          link="/about"
+          label="about"
+          onClick={onClick}
+        />
+        <NavItem
+          active={navActive === 'navItem-recipes'}
+          link="/recipes"
+          label="recipes"
+          onClick={onClick}
+        />
+        <NavItem
+          active={navActive === 'navItem-food'}
+          link="/food"
+          label="food"
+          onClick={onClick}
+        />
+      </div>
+    );
+  }
+}
 
 export default NavBar;

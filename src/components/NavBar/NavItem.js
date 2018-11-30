@@ -2,9 +2,14 @@ import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import './NavBar.css';
 
-const NavItem = ({ value = '', link = '/' }) => (
-  <Link className="NavItem NavItem-Link" to={link}>
-    {value}
+const NavItem = ({ active, label, link, onClick }) => (
+  <Link
+    className={active ? 'NavItem-Link is-active' : 'NavItem-Link'}
+    id={`navItem-${label}`}
+    to={link}
+    onClick={onClick}
+  >
+    {label}
   </Link>
 );
 
