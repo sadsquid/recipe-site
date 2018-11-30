@@ -5,9 +5,12 @@ const About = () => (
   <div className="About">
     <div className="About-content">
       <p className="About-quote">
-        "We should have a site where we can show people pictures of us and food and stuff"
+        "We should have a site where we can show people pictures of us and food and stuff!"
       </p>
-      <p className="About-maintext"> Welcome to the site!</p>
+      <p>todo: add pics of us here</p>
+      <p className="About-quote" />
+
+      <p className="About-maintext"> </p>
     </div>
   </div>
 );
