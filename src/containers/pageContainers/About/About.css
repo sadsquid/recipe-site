@@ -1,7 +1,4 @@
 .About {
-  height: 100%;
-  margin: 0;
-
   background-color: #fff;
   color: #333;
 }
@@ -13,15 +10,6 @@
 .About h5 {
   color: #a63b1a;
 }
-.About-maintext {
-  padding-left: 24px;
-  width: 100%;
-}
-.About-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .About-quote {
   padding: 24px 0px;
@@ -32,7 +20,6 @@
   border-bottom: 1px dashed #a63b1a;
 
   color: #c27863;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   /* font-weight: bold; */
 }
 
@@ -43,8 +30,8 @@
 }
 
 .About-bold {
-  color: #cc3b1a;
-  font-family: 'Helvetica Neue';
+  color: #c27863;
+  /* font-family: 'Helvetica Neue'; */
   font-weight: bold;
   font-size: 14px;
 }

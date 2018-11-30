@@ -1,0 +1,52 @@
+.PhotoGrid {
+}
+.PhotoGrid-row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.PhotoGrid-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  flex: 33%;
+}
+
+img {
+  margin-top: 8px;
+  margin: 0 auto;
+  padding: 12px 0px;
+  max-width: 90%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 830px) {
+  .PhotoGrid-row {
+    width: 600px;
+    margin: 0 40px;
+    justify-content: center;
+    grid-template-columns: max-content max-content;
+  }
+  .PhotoGrid-column {
+    margin: 0;
+    padding: 0;
+  }
+  .PhotoGrid-column img {
+    margin-top: 8px;
+    /* margin: 0 10px; */
+    padding: 10px 12px;
+    max-width: 320px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .PhotoGrid-row {
+    grid-template-columns: max-content;
+  }
+  .PhotoGrid-column img {
+    margin-top: 8px;
+    padding: 0;
+    max-width: 600px;
+  }
+}

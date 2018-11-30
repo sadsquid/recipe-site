@@ -1,25 +1,28 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
   background-color: #fff;
 }
 
 h1 {
   font-size: 48px;
-  font-weight: bold;
-  font-family: 'Helvetica Neue';
+  font-family: sans-serif;
+  font-weight: normal;
+  font-family: 'Lora';
+}
+
+a {
+  font-family: 'Gill Sans';
+  font-size: 20px;
+  text-decoration: none;
 }
 
 p {
   font-size: 16px;
   font-weight: normal;
-  font-family: 'Lato';
 }
 
 html {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Gill Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -29,5 +32,4 @@ code {
 }
 
 #root {
-  height: 100%;
 }

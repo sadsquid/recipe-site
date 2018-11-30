@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import PhotoGrid from '../../../components/PhotoGrid';
 
 const About = () => (
   <div className="About">
@@ -12,9 +13,8 @@ const About = () => (
         {' and '}
         <span className="About-bold">stuff</span> "
       </p>
-      <p className="About-todo">todo: add pics of us here...</p>
-      {/* <p className="About-quote" /> */}
-
+      <PhotoGrid />
+      <p className="About-quote" />
       <p className="About-maintext"> </p>
     </div>
   </div>

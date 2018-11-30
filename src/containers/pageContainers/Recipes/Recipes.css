@@ -1,32 +1,4 @@
-/* .Recipes {
-  height: 100%;
+.Recipes {
   margin: 0;
-
-  background-color: #fff;
-  color: #333;
+  padding: 0;
 }
-
-.Recipes h1,
-.Recipes h2,
-.Recipes h3,
-.Recipes h4,
-.Recipes h5 {
-  color: #a63b1a;
-}
-.Recipes-maintext {
-  padding-left: 24px;
-  width: 100%;
-}
-.Recipes-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.Recipes-quote {
-  border: 1px solid #a63b1a;
-  border-radius: 4px;
-  padding: 36px 120px;
-  opacity: 0.5;
-  color: #a63b1a;
-} */

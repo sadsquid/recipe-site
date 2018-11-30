@@ -1,15 +1,11 @@
 .App {
-  height: 100%;
-  margin: 0;
-  padding: 0;
   margin: 16px;
+  padding: 0;
 }
 
 .App-Layout {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  /* background-color: #f7f7f7; */
 }
 .App-Banner {
   height: 72px;
@@ -20,29 +16,26 @@
   color: #a63b1a;
 }
 .App-Content {
-  display: flex;
-  height: 100%;
+  display: grid;
+  margin: 0;
+  /* justify-content: center; */
+  grid-template-columns: auto 830px auto;
   /* background-color: #f7f7f7; */
 }
 .App-MainArea {
   display: grid;
   grid-template-rows: max-content auto;
-  height: 100%;
   margin: 0 24px;
 }
 .App-MainContent {
-  height: 100%;
-  width: 830px;
   margin-top: 12px;
 }
 
 .App-LeftNav {
   background-color: #ebddc2;
-  height: 100%;
-  width: 265px;
+  width: 100%;
 }
 .App-RightNav {
   background-color: #ebddc2;
-  height: 100%;
-  width: 265px;
+  width: 100%;
 }
